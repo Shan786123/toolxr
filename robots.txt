@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://toolxr.netlify.app/sitemap.xml
 
 # Block temp backend folders
 Disallow: /backend/uploads/
