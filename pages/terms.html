@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO Meta Tags -->
+<meta name="description" content="ToolXr terms of service: acceptable use, intellectual property, disclaimers and limitations.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ToolXr">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Terms of Service — ToolXr">
+<meta property="og:description" content="ToolXr terms of service: acceptable use, intellectual property, disclaimers and limitations.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../og-image.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Terms of Service — ToolXr">
+<meta name="twitter:description" content="ToolXr terms of service: acceptable use, intellectual property, disclaimers and limitations.">
+
+<!-- Favicon & PWA -->
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="manifest" href="../manifest.json">
+<meta name="theme-color" content="#4f8cff">
+<title>Terms of Service — ToolXr</title>
+
+<style>
+:root {
+  --bg:#0a0a0f;--bg2:#111118;--bg3:#1a1a24;--bg4:#22222f;
+  --accent:#4f8cff;--accent2:#7c3aed;--accent3:#06d6a0;--accent4:#f97316;
+  --text:#f0f0f8;--text2:#9090a8;--text3:#5a5a70;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.12);
+  --radius:14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.7}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg2)}
+::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:999px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;
+  padding:0 2rem;height:60px;background:rgba(10,10,15,0.9);backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border)}
+.logo{font-family:'Space Mono',monospace;font-size:20px;font-weight:700;letter-spacing:-0.5px;color:var(--text);text-decoration:none}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:1.5rem}
+.nav-links a{font-size:13px;color:var(--text3);text-decoration:none;transition:color 0.15s}
+.nav-links a:hover{color:var(--text)}
+.nav-back{font-size:13px;color:var(--text3);display:flex;align-items:center;gap:5px;text-decoration:none;
+  padding:6px 12px;border-radius:8px;border:1px solid var(--border2);background:var(--bg3);transition:all 0.15s}
+.nav-back:hover{color:var(--accent);border-color:var(--accent);text-decoration:none}
+
+/* HERO */
+.page-hero{padding:4rem 2rem 3rem;max-width:860px;margin:0 auto}
+.page-eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);background:rgba(79,140,255,0.1);
+  border:1px solid rgba(79,140,255,0.2);padding:4px 12px;border-radius:999px;margin-bottom:1rem}
+.page-hero h1{font-family:'Space Mono',monospace;font-size:clamp(1.8rem,4vw,2.8rem);
+  font-weight:700;letter-spacing:-1px;margin-bottom:0.75rem}
+.page-hero p{font-size:16px;color:var(--text2);max-width:580px}
+.page-updated{font-size:12px;color:var(--text3);margin-top:0.5rem}
+
+/* CONTENT */
+.page-content{max-width:860px;margin:0 auto;padding:0 2rem 5rem}
+.section{margin-bottom:3rem}
+.section h2{font-size:18px;font-weight:600;color:var(--text);margin-bottom:0.75rem;
+  padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
+.section h3{font-size:15px;font-weight:600;color:var(--text2);margin:1.25rem 0 0.4rem}
+.section p{font-size:14px;color:var(--text2);margin-bottom:0.75rem}
+.section ul,.section ol{padding-left:1.5rem;margin-bottom:0.75rem}
+.section li{font-size:14px;color:var(--text2);margin-bottom:0.35rem}
+.section strong{color:var(--text);font-weight:600}
+.section a{color:var(--accent)}
+
+/* HIGHLIGHT BOX */
+.highlight-box{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius);
+  padding:1.25rem 1.5rem;margin:1.5rem 0}
+.highlight-box.green{border-color:rgba(6,214,160,0.25);background:rgba(6,214,160,0.05)}
+.highlight-box.blue{border-color:rgba(79,140,255,0.25);background:rgba(79,140,255,0.05)}
+.highlight-box.orange{border-color:rgba(249,115,22,0.25);background:rgba(249,115,22,0.05)}
+.highlight-box p{margin:0;font-size:14px}
+
+/* TABLE */
+.section table{width:100%;border-collapse:collapse;font-size:13px;margin:1rem 0}
+.section th{background:var(--bg3);color:var(--text);font-weight:600;padding:10px 14px;text-align:left;border:1px solid var(--border2)}
+.section td{padding:9px 14px;color:var(--text2);border:1px solid var(--border)}
+.section tr:nth-child(even) td{background:rgba(255,255,255,0.02)}
+
+/* CONTACT FORM */
+.contact-form{display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group label{font-size:12px;color:var(--text3);font-weight:500;letter-spacing:0.05em;text-transform:uppercase}
+.form-group input,.form-group select,.form-group textarea{
+  background:var(--bg3);border:1px solid var(--border2);border-radius:8px;
+  padding:10px 14px;font-size:14px;color:var(--text);font-family:'DM Sans',sans-serif;
+  outline:none;transition:border-color 0.15s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--accent)}
+.form-group textarea{min-height:120px;resize:vertical}
+.form-group select option{background:var(--bg3)}
+.btn-submit{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 28px;background:var(--accent);color:#fff;border:none;border-radius:999px;
+  font-size:14px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.15s;width:fit-content}
+.btn-submit:hover{background:#3d7bef;transform:translateY(-1px)}
+
+/* CARDS GRID */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:1.5rem 0}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem}
+.card-icon{font-size:1.75rem;margin-bottom:0.75rem}
+.card h3{font-size:14px;font-weight:600;color:var(--text);margin-bottom:0.4rem}
+.card p{font-size:13px;color:var(--text3);line-height:1.5;margin:0}
+
+/* TOOLS LIST */
+.tools-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin:1rem 0}
+.tool-item{background:var(--bg2);border:1px solid var(--border);border-radius:8px;
+  padding:10px 14px;font-size:13px;color:var(--text2);display:flex;align-items:center;gap:8px}
+.tool-item span{font-size:15px}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;background:var(--bg2)}
+footer p{font-size:12px;color:var(--text3)}
+.footer-links{display:flex;gap:1.5rem;justify-content:center;margin-bottom:0.75rem;flex-wrap:wrap}
+.footer-links a{font-size:12px;color:var(--text3);text-decoration:none}
+.footer-links a:hover{color:var(--accent)}
+
+@media(max-width:600px){
+  .form-row{grid-template-columns:1fr}
+  .nav-links{display:none}
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="../index.html">Tool<span>Xr</span></a>
+  <div class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a class="nav-back" href="../index.html">← Back to Tools</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">📋 Legal</div>
+  <h1>Terms of Service</h1>
+  <p>By using ToolXr, you agree to these terms. They're written to be fair and easy to understand.</p>
+  <p class="page-updated">Last updated: May 4, 2026</p>
+</div>
+<div class="page-content">
+
+<div class="highlight-box blue">
+  <p><strong>Short version:</strong> Use ToolXr for legal purposes, don't abuse the service, and we're not liable for tool outputs. That's the gist.</p>
+</div>
+
+<div class="section">
+  <h2>1. Acceptance of Terms</h2>
+  <p>By accessing or using ToolXr ("the Service"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Service.</p>
+</div>
+
+<div class="section">
+  <h2>2. Description of Service</h2>
+  <p>ToolXr provides 38 free browser-based tools for PDF manipulation, image processing, code formatting, and file conversion. The service is provided free of charge and requires no account creation.</p>
+</div>
+
+<div class="section">
+  <h2>3. Acceptable Use</h2>
+  <p>You agree to use ToolXr only for lawful purposes. You must not:</p>
+  <ul>
+    <li>Use the service to process files containing illegal content</li>
+    <li>Attempt to overload, hack, or disrupt the service</li>
+    <li>Use automated scripts to abuse the service (excessive automated requests)</li>
+    <li>Violate any applicable laws or regulations</li>
+    <li>Infringe the intellectual property rights of others</li>
+    <li>Upload malware, viruses, or malicious code</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>4. Intellectual Property</h2>
+  <p><strong>Your files:</strong> You retain full ownership of all files you process through ToolXr. We claim no rights to your content.</p>
+  <p><strong>ToolXr:</strong> The ToolXr name, logo, design, and code are our intellectual property. You may not reproduce or distribute ToolXr's interface without permission.</p>
+  <p><strong>Open source libraries:</strong> ToolXr uses open-source libraries (pdf-lib, PDF.js, Tesseract.js, etc.) which are licensed under their respective licenses.</p>
+</div>
+
+<div class="section">
+  <h2>5. Disclaimer of Warranties</h2>
+  <p>ToolXr is provided <strong>"as is"</strong> without warranties of any kind, either express or implied, including but not limited to:</p>
+  <ul>
+    <li>Accuracy or reliability of tool outputs</li>
+    <li>Uninterrupted availability of the service</li>
+    <li>Fitness for a particular purpose</li>
+  </ul>
+  <p>Always verify important outputs (especially converted documents) before relying on them.</p>
+</div>
+
+<div class="section">
+  <h2>6. Limitation of Liability</h2>
+  <p>To the maximum extent permitted by law, ToolXr and its creators shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the service, including but not limited to data loss or corruption.</p>
+</div>
+
+<div class="section">
+  <h2>7. File Processing</h2>
+  <ul>
+    <li>Browser-based tools process files locally — no data is transmitted to our servers</li>
+    <li>Server-side tools (5 converter tools) transmit files securely and delete them within 30 minutes</li>
+    <li>We are not responsible for data loss during processing — always keep backups of important files</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>8. Service Availability</h2>
+  <p>We strive for high availability but do not guarantee uninterrupted service. We reserve the right to modify, suspend, or discontinue the service at any time without notice.</p>
+</div>
+
+<div class="section">
+  <h2>9. Changes to Terms</h2>
+  <p>We reserve the right to update these terms at any time. Updated terms will be posted with a new date. Continued use of the service after changes constitutes acceptance.</p>
+</div>
+
+<div class="section">
+  <h2>10. Governing Law</h2>
+  <p>These terms are governed by applicable law. Any disputes will be resolved through binding arbitration or in courts of competent jurisdiction.</p>
+</div>
+
+<div class="section">
+  <h2>11. Contact</h2>
+  <p>Questions about these Terms? Email us at <a href="mailto:support@toolxr.io">support@toolxr.io</a></p>
+</div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="cookies.html">Cookie Policy</a>
+    <a href="sitemap.html">Sitemap</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+  <p>© 2026 ToolXr. All rights reserved. &nbsp;·&nbsp; Built with ❤ · Privacy-first · 100% Free</p>
+</footer>
+
+</body>
+</html>

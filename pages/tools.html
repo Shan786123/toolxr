@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO Meta Tags -->
+<meta name="description" content="Complete guide to all 38 ToolXr tools. What each tool does, how to use it, and what it requires.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ToolXr">
+
+<!-- Open Graph -->
+<meta property="og:title" content="All Tools Guide — ToolXr">
+<meta property="og:description" content="Complete guide to all 38 ToolXr tools. What each tool does, how to use it, and what it requires.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../og-image.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="All Tools Guide — ToolXr">
+<meta name="twitter:description" content="Complete guide to all 38 ToolXr tools. What each tool does, how to use it, and what it requires.">
+
+<!-- Favicon & PWA -->
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="manifest" href="../manifest.json">
+<meta name="theme-color" content="#4f8cff">
+<title>All Tools Guide — ToolXr</title>
+
+<style>
+:root {
+  --bg:#0a0a0f;--bg2:#111118;--bg3:#1a1a24;--bg4:#22222f;
+  --accent:#4f8cff;--accent2:#7c3aed;--accent3:#06d6a0;--accent4:#f97316;
+  --text:#f0f0f8;--text2:#9090a8;--text3:#5a5a70;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.12);
+  --radius:14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.7}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg2)}
+::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:999px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;
+  padding:0 2rem;height:60px;background:rgba(10,10,15,0.9);backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border)}
+.logo{font-family:'Space Mono',monospace;font-size:20px;font-weight:700;letter-spacing:-0.5px;color:var(--text);text-decoration:none}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:1.5rem}
+.nav-links a{font-size:13px;color:var(--text3);text-decoration:none;transition:color 0.15s}
+.nav-links a:hover{color:var(--text)}
+.nav-back{font-size:13px;color:var(--text3);display:flex;align-items:center;gap:5px;text-decoration:none;
+  padding:6px 12px;border-radius:8px;border:1px solid var(--border2);background:var(--bg3);transition:all 0.15s}
+.nav-back:hover{color:var(--accent);border-color:var(--accent);text-decoration:none}
+
+/* HERO */
+.page-hero{padding:4rem 2rem 3rem;max-width:860px;margin:0 auto}
+.page-eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);background:rgba(79,140,255,0.1);
+  border:1px solid rgba(79,140,255,0.2);padding:4px 12px;border-radius:999px;margin-bottom:1rem}
+.page-hero h1{font-family:'Space Mono',monospace;font-size:clamp(1.8rem,4vw,2.8rem);
+  font-weight:700;letter-spacing:-1px;margin-bottom:0.75rem}
+.page-hero p{font-size:16px;color:var(--text2);max-width:580px}
+.page-updated{font-size:12px;color:var(--text3);margin-top:0.5rem}
+
+/* CONTENT */
+.page-content{max-width:860px;margin:0 auto;padding:0 2rem 5rem}
+.section{margin-bottom:3rem}
+.section h2{font-size:18px;font-weight:600;color:var(--text);margin-bottom:0.75rem;
+  padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
+.section h3{font-size:15px;font-weight:600;color:var(--text2);margin:1.25rem 0 0.4rem}
+.section p{font-size:14px;color:var(--text2);margin-bottom:0.75rem}
+.section ul,.section ol{padding-left:1.5rem;margin-bottom:0.75rem}
+.section li{font-size:14px;color:var(--text2);margin-bottom:0.35rem}
+.section strong{color:var(--text);font-weight:600}
+.section a{color:var(--accent)}
+
+/* HIGHLIGHT BOX */
+.highlight-box{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius);
+  padding:1.25rem 1.5rem;margin:1.5rem 0}
+.highlight-box.green{border-color:rgba(6,214,160,0.25);background:rgba(6,214,160,0.05)}
+.highlight-box.blue{border-color:rgba(79,140,255,0.25);background:rgba(79,140,255,0.05)}
+.highlight-box.orange{border-color:rgba(249,115,22,0.25);background:rgba(249,115,22,0.05)}
+.highlight-box p{margin:0;font-size:14px}
+
+/* TABLE */
+.section table{width:100%;border-collapse:collapse;font-size:13px;margin:1rem 0}
+.section th{background:var(--bg3);color:var(--text);font-weight:600;padding:10px 14px;text-align:left;border:1px solid var(--border2)}
+.section td{padding:9px 14px;color:var(--text2);border:1px solid var(--border)}
+.section tr:nth-child(even) td{background:rgba(255,255,255,0.02)}
+
+/* CONTACT FORM */
+.contact-form{display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group label{font-size:12px;color:var(--text3);font-weight:500;letter-spacing:0.05em;text-transform:uppercase}
+.form-group input,.form-group select,.form-group textarea{
+  background:var(--bg3);border:1px solid var(--border2);border-radius:8px;
+  padding:10px 14px;font-size:14px;color:var(--text);font-family:'DM Sans',sans-serif;
+  outline:none;transition:border-color 0.15s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--accent)}
+.form-group textarea{min-height:120px;resize:vertical}
+.form-group select option{background:var(--bg3)}
+.btn-submit{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 28px;background:var(--accent);color:#fff;border:none;border-radius:999px;
+  font-size:14px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.15s;width:fit-content}
+.btn-submit:hover{background:#3d7bef;transform:translateY(-1px)}
+
+/* CARDS GRID */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:1.5rem 0}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem}
+.card-icon{font-size:1.75rem;margin-bottom:0.75rem}
+.card h3{font-size:14px;font-weight:600;color:var(--text);margin-bottom:0.4rem}
+.card p{font-size:13px;color:var(--text3);line-height:1.5;margin:0}
+
+/* TOOLS LIST */
+.tools-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin:1rem 0}
+.tool-item{background:var(--bg2);border:1px solid var(--border);border-radius:8px;
+  padding:10px 14px;font-size:13px;color:var(--text2);display:flex;align-items:center;gap:8px}
+.tool-item span{font-size:15px}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;background:var(--bg2)}
+footer p{font-size:12px;color:var(--text3)}
+.footer-links{display:flex;gap:1.5rem;justify-content:center;margin-bottom:0.75rem;flex-wrap:wrap}
+.footer-links a{font-size:12px;color:var(--text3);text-decoration:none}
+.footer-links a:hover{color:var(--accent)}
+
+@media(max-width:600px){
+  .form-row{grid-template-columns:1fr}
+  .nav-links{display:none}
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="../index.html">Tool<span>Xr</span></a>
+  <div class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a class="nav-back" href="../index.html">← Back to Tools</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">📖 Resources</div>
+  <h1>All 38 Tools Guide</h1>
+  <p>A complete reference for every tool in ToolXr — what it does, how to use it, and what it requires.</p>
+  <p class="page-updated">Last updated: May 4, 2026</p>
+</div>
+<div class="page-content">
+
+<div class="section">
+  <h2>📄 PDF Tools</h2>
+  <table>
+    <tr><th>Tool</th><th>What it does</th><th>Works offline?</th><th>Requires</th></tr>
+    <tr><td>Merge PDF</td><td>Combine multiple PDFs into one file</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Split PDF</td><td>Extract specific pages or page ranges</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Compress PDF</td><td>Reduce file size using object stream optimization</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Rotate PDF</td><td>Rotate all pages 90°, 180°, or 270°</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Lock PDF</td><td>Add password protection to a PDF</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Unlock PDF</td><td>Remove password (you must know the current password)</td><td>✅ Yes</td><td>Current password</td></tr>
+    <tr><td>Watermark PDF</td><td>Add diagonal text watermark to every page</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>PDF to Image</td><td>Export each page as a PNG — downloads as ZIP</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Page Numbers</td><td>Add numbered footers or headers to pages</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>PDF Info</td><td>View metadata: page count, author, title, dates</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Fill &amp; Sign</td><td>Draw a signature and embed it on the last page</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>OCR PDF</td><td>Extract text from scanned PDFs using AI (Tesseract.js)</td><td>✅ Yes</td><td>Nothing (AI runs in browser)</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <h2>🖼️ Image Tools</h2>
+  <table>
+    <tr><th>Tool</th><th>What it does</th><th>Works offline?</th><th>Requires</th></tr>
+    <tr><td>Compress Image</td><td>Reduce JPEG/PNG/WebP size with a quality slider</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Resize Image</td><td>Resize to custom dimensions, optionally lock aspect ratio</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Convert Image</td><td>Convert between JPG, PNG, WebP formats</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Crop Image</td><td>Crop using X/Y offset and custom width/height</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Remove Background</td><td>AI removes image background via remove.bg API</td><td>❌ Needs internet</td><td>Free remove.bg API key</td></tr>
+    <tr><td>Color Picker</td><td>Click any pixel to get HEX and RGB values</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Rotate &amp; Flip</td><td>Rotate 90/180/270° or mirror horizontally/vertically</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Image to PDF</td><td>Bundle one or more images into a PDF document</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>Upscale Image</td><td>Increase resolution 2×, 3×, or 4× using canvas interpolation</td><td>✅ Yes</td><td>Nothing</td></tr>
+    <tr><td>EXIF Viewer</td><td>Read file metadata: size, type, last modified date</td><td>✅ Yes</td><td>Nothing</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <h2>⚡ Code Tools</h2>
+  <table>
+    <tr><th>Tool</th><th>What it does</th><th>Works offline?</th></tr>
+    <tr><td>JS Minifier</td><td>Remove whitespace and comments from JavaScript</td><td>✅ Yes</td></tr>
+    <tr><td>CSS Minifier</td><td>Strip and compress CSS stylesheets</td><td>✅ Yes</td></tr>
+    <tr><td>Code Formatter</td><td>Indent and prettify HTML, CSS, JavaScript</td><td>✅ Yes</td></tr>
+    <tr><td>Diff Checker</td><td>Compare two texts side-by-side, highlights additions and removals</td><td>✅ Yes</td></tr>
+    <tr><td>Base64 Tool</td><td>Encode text to Base64 or decode Base64 to text</td><td>✅ Yes</td></tr>
+    <tr><td>URL Encoder</td><td>Encode or decode URL strings</td><td>✅ Yes</td></tr>
+    <tr><td>JSON Formatter</td><td>Validate, beautify, and minify JSON data</td><td>✅ Yes</td></tr>
+    <tr><td>Hash Generator</td><td>Generate MD5, SHA-1, SHA-256, SHA-512 hashes</td><td>✅ Yes</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <h2>🔁 Converter Tools</h2>
+  <table>
+    <tr><th>Tool</th><th>What it does</th><th>Requires Backend?</th></tr>
+    <tr><td>Word to PDF</td><td>Convert .docx files to PDF</td><td>✅ Yes (LibreOffice)</td></tr>
+    <tr><td>PDF to Word</td><td>Export PDF as editable .docx</td><td>✅ Yes (LibreOffice)</td></tr>
+    <tr><td>Excel to PDF</td><td>Convert .xlsx spreadsheets to PDF</td><td>✅ Yes (LibreOffice)</td></tr>
+    <tr><td>PPT to PDF</td><td>Convert .pptx presentations to PDF</td><td>✅ Yes (LibreOffice)</td></tr>
+    <tr><td>HTML to PDF</td><td>Convert HTML markup to a PDF (basic, browser-based)</td><td>❌ No</td></tr>
+    <tr><td>Markdown to PDF</td><td>Render Markdown (.md) files as clean PDF</td><td>❌ No</td></tr>
+    <tr><td>CSV to PDF</td><td>Display CSV data as a formatted PDF table</td><td>❌ No</td></tr>
+    <tr><td>Bulk Converter</td><td>Batch convert multiple files at once, download as ZIP</td><td>✅ Yes (LibreOffice)</td></tr>
+  </table>
+</div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="cookies.html">Cookie Policy</a>
+    <a href="sitemap.html">Sitemap</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+  <p>© 2026 ToolXr. All rights reserved. &nbsp;·&nbsp; Built with ❤ · Privacy-first · 100% Free</p>
+</footer>
+
+</body>
+</html>

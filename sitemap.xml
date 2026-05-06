@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://yourdomain.com/index.html</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/about.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/features.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/faq.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/contact.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/blog.html</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/tools.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/security.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/business.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/education.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/privacy.html</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/terms.html</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/cookies.html</loc><priority>0.4</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/press.html</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://yourdomain.com/pages/sitemap.html</loc><priority>0.3</priority><changefreq>monthly</changefreq></url>
+</urlset>

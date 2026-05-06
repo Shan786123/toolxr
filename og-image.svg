@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#111128"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f8cff;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#06d6a0;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f8cff"/>
+      <stop offset="33%" style="stop-color:#7c3aed"/>
+      <stop offset="66%" style="stop-color:#06d6a0"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </linearGradient>
+    <filter id="glow-filter">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Glow orb top-left -->
+  <ellipse cx="200" cy="150" rx="300" ry="250" fill="#4f8cff" opacity="0.06" filter="url(#glow-filter)"/>
+  <!-- Glow orb bottom-right -->
+  <ellipse cx="1000" cy="500" rx="300" ry="250" fill="#7c3aed" opacity="0.06" filter="url(#glow-filter)"/>
+
+  <!-- Top gradient bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#barGrad)"/>
+
+  <!-- Grid pattern subtle -->
+  <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Main logo -->
+  <text x="96" y="230" font-family="monospace" font-weight="700" font-size="100" fill="#f0f0f8" letter-spacing="-4">Tool</text>
+  <text x="416" y="230" font-family="monospace" font-weight="700" font-size="100" fill="#4f8cff" letter-spacing="-4">Xr</text>
+
+  <!-- Tagline -->
+  <text x="96" y="295" font-family="sans-serif" font-weight="400" font-size="28" fill="#9090a8" letter-spacing="0.5">38 Free Tools — PDF · Image · Code · Convert</text>
+
+  <!-- Divider line -->
+  <line x1="96" y1="330" x2="600" y2="330" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Feature pills -->
+  <!-- Pill 1 - PDF -->
+  <rect x="96" y="360" width="160" height="44" rx="22" fill="rgba(79,140,255,0.12)" stroke="rgba(79,140,255,0.3)" stroke-width="1"/>
+  <text x="176" y="388" font-family="sans-serif" font-size="18" fill="#60a5fa" text-anchor="middle">📄 12 PDF Tools</text>
+
+  <!-- Pill 2 - Image -->
+  <rect x="272" y="360" width="180" height="44" rx="22" fill="rgba(6,214,160,0.12)" stroke="rgba(6,214,160,0.3)" stroke-width="1"/>
+  <text x="362" y="388" font-family="sans-serif" font-size="18" fill="#06d6a0" text-anchor="middle">🖼️ 10 Image Tools</text>
+
+  <!-- Pill 3 - Code -->
+  <rect x="468" y="360" width="165" height="44" rx="22" fill="rgba(249,115,22,0.12)" stroke="rgba(249,115,22,0.3)" stroke-width="1"/>
+  <text x="550" y="388" font-family="sans-serif" font-size="18" fill="#fb923c" text-anchor="middle">⚡ 8 Code Tools</text>
+
+  <!-- Pill 4 - Convert -->
+  <rect x="649" y="360" width="205" height="44" rx="22" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="751" y="388" font-family="sans-serif" font-size="18" fill="#a78bfa" text-anchor="middle">🔁 8 Converter Tools</text>
+
+  <!-- Bottom badges -->
+  <text x="96" y="470" font-family="sans-serif" font-size="20" fill="rgba(255,255,255,0.25)">✅ 100% Free</text>
+  <text x="280" y="470" font-family="sans-serif" font-size="20" fill="rgba(255,255,255,0.25)">·</text>
+  <text x="310" y="470" font-family="sans-serif" font-size="20" fill="rgba(255,255,255,0.25)">🔒 No Upload Stored</text>
+  <text x="570" y="470" font-family="sans-serif" font-size="20" fill="rgba(255,255,255,0.25)">·</text>
+  <text x="600" y="470" font-family="sans-serif" font-size="20" fill="rgba(255,255,255,0.25)">🚫 No Sign-up Required</text>
+
+  <!-- URL -->
+  <text x="96" y="560" font-family="monospace" font-size="20" fill="rgba(79,140,255,0.6)">yourdomain.com</text>
+
+  <!-- Right side decorative tool cards -->
+  <!-- Card 1 -->
+  <rect x="900" y="180" width="200" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="928" y="215" font-family="sans-serif" font-size="24">📄</text>
+  <text x="968" y="213" font-family="sans-serif" font-size="15" fill="#f0f0f8" font-weight="600">Merge PDF</text>
+  <text x="968" y="235" font-family="sans-serif" font-size="13" fill="#5a5a70">Combine multiple PDFs</text>
+
+  <!-- Card 2 -->
+  <rect x="900" y="278" width="200" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="928" y="313" font-family="sans-serif" font-size="24">🗜️</text>
+  <text x="968" y="311" font-family="sans-serif" font-size="15" fill="#f0f0f8" font-weight="600">Compress Image</text>
+  <text x="968" y="333" font-family="sans-serif" font-size="13" fill="#5a5a70">Reduce size, keep quality</text>
+
+  <!-- Card 3 -->
+  <rect x="900" y="376" width="200" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="928" y="411" font-family="sans-serif" font-size="24">📦</text>
+  <text x="968" y="409" font-family="sans-serif" font-size="15" fill="#f0f0f8" font-weight="600">JSON Formatter</text>
+  <text x="968" y="431" font-family="sans-serif" font-size="13" fill="#5a5a70">Validate &amp; beautify JSON</text>
+
+  <!-- Card 4 -->
+  <rect x="900" y="474" width="200" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="928" y="509" font-family="sans-serif" font-size="24">🔁</text>
+  <text x="968" y="507" font-family="sans-serif" font-size="15" fill="#f0f0f8" font-weight="600">Word to PDF</text>
+  <text x="968" y="529" font-family="sans-serif" font-size="13" fill="#5a5a70">Convert DOCX to PDF</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#barGrad)"/>
+</svg>

@@ -1,0 +1,26 @@
+{
+  "name": "ToolXr — 38 Free Tools",
+  "short_name": "ToolXr",
+  "description": "38 free browser-based tools for PDF, Image, Code & File Conversion. No sign-up. Privacy-first.",
+  "start_url": "/toolxr.html",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#4f8cff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "screenshots": [],
+  "shortcuts": [
+    { "name": "PDF Tools",       "url": "/toolxr.html#pdf",  "description": "12 PDF tools" },
+    { "name": "Image Tools",     "url": "/toolxr.html#img",  "description": "10 image tools" },
+    { "name": "Code Tools",      "url": "/toolxr.html#code", "description": "8 code tools" },
+    { "name": "Converter Tools", "url": "/toolxr.html#conv", "description": "8 converter tools" }
+  ]
+}

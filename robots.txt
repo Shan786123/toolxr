@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Block temp backend folders
+Disallow: /backend/uploads/
+Disallow: /backend/outputs/
